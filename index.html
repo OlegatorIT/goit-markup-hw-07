@@ -18,30 +18,33 @@
 
 <body>
   <header class="header">
-    <div class="container header-container">
-      <nav class="header-navigation">
-        <a class="icon" href="./index.html"><span class="icon-web">Web</span><span class="icon-studio">Studio</span></a>
+    <div class="container header__container">
+      <nav class="navigation">
+        <a class="logo" href="./index.html">
+          <span class="logo__web">Web</span>
+          <span class="logo__studio">Studio</span></a>
 
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="link current">Студія</a>
+        <ul class="menu list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link current">Студія</a>
           </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="link">Портфоліо</a>
+          <li class="menu-item">
+            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
           </li>
-          <li class="nav-list-item"><a href="" class="link">Контакти</a></li>
+          <li class="menu-item"><a href="" class="menu__link">Контакти</a></li>
         </ul>
       </nav>
       <ul class="nav-contact list">
         <li>
-          <a href="mailto:info@devstudio.com" target="_blank" class="contact"><svg class="icon-contact" width="16"
+          <a href="mailto:info@devstudio.com" target="_blank" class="nav-contact__link">
+            <svg class="nav-contact__icon" width="16"
               height="12">
               <use href="./images/icons.svg#icon-header-icon-imail"></use>
             </svg>info@devstudio.com</a>
         </li>
 
         <li>
-          <a href="tel:+380961111111" class="contact"><svg class="icon-contact" width="10" height="16">
+          <a href="tel:+380961111111" class="nav-contact__link"><svg class="nav-contact__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-header-icon-tel"></use>
             </svg>+38 096 111 11 11</a>
         </li>
@@ -49,57 +52,57 @@
     </div>
   </header>
   <main>
+
     <section class="hero">
       <div class="container ">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button button" data-modal-open>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button button" data-modal-open>
           Замовити послугу
         </button>
       </div>
     </section>
 
-    <section class="section-qualities">
+    <section class="qualities">
       <div class="container">
+      
         <h2 class="invisible">Якості нашої компаніі</h2>
 
-
-
-        <ul class="list qualities-list">
+        <ul class="list qualities__list">
           <li>
-            <div class="item"><svg class="icon-qualities" width="70" height="70">
+            <div class="item"><svg  width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg></div>
-            <h3 class="qualities-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="qualities-text">
+            <h3 class="qualities__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="qualities__text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <div class="item"><svg class="icon-qualities" width="70" height="70">
+            <div class="item"><svg  width="70" height="70">
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg></div>
-            <h3 class="qualities-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="qualities-text">
+            <h3 class="qualities__title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="qualities__text">
               Завдання організації, особливо рамки і місце навчання кадрів
               тягне у себе.
             </p>
           </li>
           <li>
-            <div class="item"><svg class="icon-qualities" width="70" height="70">
+            <div class="item"><svg  width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg></div>
-            <h3 class="qualities-title">ПЛАНУВАННЯ</h3>
-            <p class="qualities-text">
+            <h3 class="qualities__title">ПЛАНУВАННЯ</h3>
+            <p class="qualities__text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
-            <div class="item"><svg class="icon-qualities" width="70" height="70">
+            <div class="item"><svg  width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg></div>
-            <h3 class="qualities-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="qualities-text">
+            <h3 class="qualities__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="qualities__text">
               Значимість цих проблем настільки очевидна, що реалізація
               планових завдань.
             </p>
@@ -110,27 +113,27 @@
       </div>
     </section>
 
-    <section class="qualities-pictures">
+    <section class="direction">
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="list qualities-pictures-list">
-          <li class="qualities-pictures-item">
-            <img class="image-qualities" src="./images/box1.jpg" alt="На малюнку зоображена Розробка" width="370" />
-            <div class="qualities-box">
-              <p class="qualities-top-text">Десктопні додатки</p>
+        <ul class="list direction__list">
+          <li class="direction__item">
+            <img class="direction__image" src="./images/box1.jpg" alt="На малюнку зоображена Розробка" width="370" />
+            <div class="direction__box">
+              <p class="direction__text">Десктопні додатки</p>
             </div>
 
           </li>
-          <li class="qualities-pictures-item">
-            <img class="image-qualities" src="./images/box2.jpg" alt="На малюнку зоображена Оптимізація" width="370" />
-            <div class="qualities-box">
-              <p class="qualities-top-text">Мобільні додатки</p>
+          <li class="direction__item">
+            <img class="direction__image" src="./images/box2.jpg" alt="На малюнку зоображена Оптимізація" width="370" />
+            <div class="direction__box">
+              <p class="direction__text">Мобільні додатки</p>
             </div>
           </li>
-          <li class="qualities-pictures-item">
-            <img class="image-qualities" src="./images/box3.jpg" alt="На малюнку зоображений Дизайн" width="370" />
-            <div class="qualities-box">
-              <p class="qualities-top-text">Дизайнерські рішення</p>
+          <li class="direction__item">
+            <img class="direction__image" src="./images/box3.jpg" alt="На малюнку зоображений Дизайн" width="370" />
+            <div class="direction__box">
+              <p class="direction__text">Дизайнерські рішення</p>
             </div>
           </li>
         </ul>
@@ -309,7 +312,7 @@
     </section>
     <section class="customers">
       <div class="container">
-        <h2 class="customers__title">Постійні клієнти </h2>
+        <h2 class="section-title">Постійні клієнти </h2>
         <ul class="customers__list list">
           <li class="customers__item">
             <a href="#" class="customers__link">
@@ -363,7 +366,7 @@
   <footer class="footer list">
     <div class="container box-footer">
       <div class="box-address">
-        <a class="icon" href="./index.html"><span class="icon-web">Web</span><span class="icon-studio">Studio</span></a>
+        <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
 
         <address>
           <ul class="address list">
