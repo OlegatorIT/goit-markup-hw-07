@@ -5,14 +5,12 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   margin-right: auto;
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   margin-right: auto;
 }
 
@@ -81,11 +79,9 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
-  display: flex;
+  @extend %align-list;
   gap: 10px;
-  align-items: center;
   transition: color var(--primary-duration-timing);
-  
 
   &:hover,
   &:focus {
@@ -99,7 +95,5 @@
   .nav-contact__link:hover &,
   .nav-contact__link:focus & {
     fill: var(--active-color);
+  }
 }
-}
-
-

@@ -26,9 +26,10 @@
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  display: flex;
+  @extend %align-list;
+ 
   justify-content: center;
-  align-items: center;
+ 
   transition: border var(--primary-duration-timing);
 &:hover,
 &:focus {

@@ -52,9 +52,7 @@
 }
 
 .modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  @include font(700, 20px, 23px,null);
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 12px;
@@ -91,9 +89,7 @@
 }
 
 .modal-message::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(null, 12px, 14px,0.01);
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -102,9 +98,7 @@
 }
 
 .modal-text {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+   @include font(null, 12px, 14px,0.01);
   color: var(--primary-text-color);
   display: block;
   margin-bottom: 4px;
@@ -128,8 +122,7 @@
 
 .privacy-text {
   line-height: calc(24 / 14);
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
 }
 
@@ -139,8 +132,7 @@
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
+   @extend %align-list;
   justify-content: center;
   fill: transparent;
   margin-right: 7px;
@@ -179,10 +171,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
+   @include font(700, 16px, 30px, 0.06);
   color: var(--white-color-text);
   cursor: pointer;
   transition: background var(--primary-duration-timing);
